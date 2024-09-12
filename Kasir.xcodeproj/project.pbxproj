@@ -1,0 +1,909 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C359E0DF211C755D6E3D349 /* Pods_Kasir_KasirUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BC8F4EF71D23B4294EE3688 /* Pods_Kasir_KasirUITests.framework */; };
+		4A7171E72C9174E10022EB63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7171E62C9174E10022EB63 /* AppDelegate.swift */; };
+		4A7171E92C9174E10022EB63 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7171E82C9174E10022EB63 /* SceneDelegate.swift */; };
+		4A7171EB2C9174E10022EB63 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7171EA2C9174E10022EB63 /* ViewController.swift */; };
+		4A7171EE2C9174E10022EB63 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 4A7171ED2C9174E10022EB63 /* Base */; };
+		4A7171F12C9174E10022EB63 /* Kasir.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4A7171EF2C9174E10022EB63 /* Kasir.xcdatamodeld */; };
+		4A7171F32C9174E30022EB63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A7171F22C9174E30022EB63 /* Assets.xcassets */; };
+		4A7171F62C9174E30022EB63 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 4A7171F52C9174E30022EB63 /* Base */; };
+		4A7172012C9174E40022EB63 /* KasirTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7172002C9174E40022EB63 /* KasirTests.swift */; };
+		4A71720B2C9174E40022EB63 /* KasirUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A71720A2C9174E40022EB63 /* KasirUITests.swift */; };
+		4A71720D2C9174E40022EB63 /* KasirUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A71720C2C9174E40022EB63 /* KasirUITestsLaunchTests.swift */; };
+		4A7172202C9175490022EB63 /* LoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A71721F2C9175490022EB63 /* LoginVC.xib */; };
+		4A7172212C9175490022EB63 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A71721E2C9175490022EB63 /* LoginVC.swift */; };
+		4A7172232C91755D0022EB63 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7172222C91755D0022EB63 /* LoginInteractor.swift */; };
+		4A7172252C91756B0022EB63 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7172242C91756B0022EB63 /* LoginPresenter.swift */; };
+		4A7172272C91757B0022EB63 /* LoginEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7172262C91757B0022EB63 /* LoginEntity.swift */; };
+		4A7172292C9175890022EB63 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7172282C9175890022EB63 /* LoginRouter.swift */; };
+		4A71722B2C9175A70022EB63 /* LoginProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A71722A2C9175A70022EB63 /* LoginProtocol.swift */; };
+		4A71722F2C9175D40022EB63 /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A71722E2C9175D40022EB63 /* HomeVC.xib */; };
+		4A7172302C9175D40022EB63 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A71722D2C9175D40022EB63 /* HomeVC.swift */; };
+		4A7172322C9175EF0022EB63 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7172312C9175EF0022EB63 /* HomeInteractor.swift */; };
+		4A7172342C9175FE0022EB63 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7172332C9175FE0022EB63 /* HomePresenter.swift */; };
+		4A7172362C91760B0022EB63 /* HomeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7172352C91760B0022EB63 /* HomeProtocol.swift */; };
+		4A7172382C91761B0022EB63 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7172372C91761B0022EB63 /* HomeRouter.swift */; };
+		4A71723A2C91762C0022EB63 /* HomeEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7172392C91762C0022EB63 /* HomeEntity.swift */; };
+		4A71723E2C91768B0022EB63 /* RegisterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A71723D2C91768B0022EB63 /* RegisterVC.xib */; };
+		4A71723F2C91768B0022EB63 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A71723C2C91768B0022EB63 /* RegisterVC.swift */; };
+		4A7172412C91769E0022EB63 /* RegisterInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7172402C91769E0022EB63 /* RegisterInteractor.swift */; };
+		4A7172432C9176AC0022EB63 /* RegisterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7172422C9176AC0022EB63 /* RegisterPresenter.swift */; };
+		4A7172452C9176BC0022EB63 /* RegisterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7172442C9176BC0022EB63 /* RegisterProtocol.swift */; };
+		4A7172472C9176CB0022EB63 /* RegisterRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7172462C9176CB0022EB63 /* RegisterRouter.swift */; };
+		4A71724A2C91EC4F0022EB63 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7172492C91EC4F0022EB63 /* Alert.swift */; };
+		4A71724C2C91EC600022EB63 /* ExtString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A71724B2C91EC600022EB63 /* ExtString.swift */; };
+		4A7172502C91FAD90022EB63 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4A71724F2C91FAD90022EB63 /* GoogleService-Info.plist */; };
+		4A7172522C9205DF0022EB63 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7172512C9205DF0022EB63 /* User+CoreDataClass.swift */; };
+		4A7172542C9205F20022EB63 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7172532C9205F20022EB63 /* User+CoreDataProperties.swift */; };
+		8806EACD9D591A07329A4D99 /* Pods_Kasir.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DD3AB84D534C042E623E227 /* Pods_Kasir.framework */; };
+		FFE14D095A30DB74C20512D2 /* Pods_KasirTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0660FE7CF4093234FE7FF9B /* Pods_KasirTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4A7171FD2C9174E40022EB63 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A7171DB2C9174E10022EB63 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4A7171E22C9174E10022EB63;
+			remoteInfo = Kasir;
+		};
+		4A7172072C9174E40022EB63 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A7171DB2C9174E10022EB63 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4A7171E22C9174E10022EB63;
+			remoteInfo = Kasir;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2BC8F4EF71D23B4294EE3688 /* Pods_Kasir_KasirUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kasir_KasirUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		495083952CBAEFDE55E698C4 /* Pods-Kasir-KasirUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kasir-KasirUITests.debug.xcconfig"; path = "Target Support Files/Pods-Kasir-KasirUITests/Pods-Kasir-KasirUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4A7171E32C9174E10022EB63 /* Kasir.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kasir.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A7171E62C9174E10022EB63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4A7171E82C9174E10022EB63 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4A7171EA2C9174E10022EB63 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4A7171ED2C9174E10022EB63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4A7171F02C9174E10022EB63 /* Kasir.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Kasir.xcdatamodel; sourceTree = "<group>"; };
+		4A7171F22C9174E30022EB63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4A7171F52C9174E30022EB63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4A7171F72C9174E30022EB63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A7171FC2C9174E40022EB63 /* KasirTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KasirTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A7172002C9174E40022EB63 /* KasirTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KasirTests.swift; sourceTree = "<group>"; };
+		4A7172062C9174E40022EB63 /* KasirUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KasirUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A71720A2C9174E40022EB63 /* KasirUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KasirUITests.swift; sourceTree = "<group>"; };
+		4A71720C2C9174E40022EB63 /* KasirUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KasirUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4A71721E2C9175490022EB63 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		4A71721F2C9175490022EB63 /* LoginVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginVC.xib; sourceTree = "<group>"; };
+		4A7172222C91755D0022EB63 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		4A7172242C91756B0022EB63 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		4A7172262C91757B0022EB63 /* LoginEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginEntity.swift; sourceTree = "<group>"; };
+		4A7172282C9175890022EB63 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		4A71722A2C9175A70022EB63 /* LoginProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProtocol.swift; sourceTree = "<group>"; };
+		4A71722D2C9175D40022EB63 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		4A71722E2C9175D40022EB63 /* HomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
+		4A7172312C9175EF0022EB63 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		4A7172332C9175FE0022EB63 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		4A7172352C91760B0022EB63 /* HomeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProtocol.swift; sourceTree = "<group>"; };
+		4A7172372C91761B0022EB63 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		4A7172392C91762C0022EB63 /* HomeEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEntity.swift; sourceTree = "<group>"; };
+		4A71723C2C91768B0022EB63 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		4A71723D2C91768B0022EB63 /* RegisterVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterVC.xib; sourceTree = "<group>"; };
+		4A7172402C91769E0022EB63 /* RegisterInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterInteractor.swift; sourceTree = "<group>"; };
+		4A7172422C9176AC0022EB63 /* RegisterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPresenter.swift; sourceTree = "<group>"; };
+		4A7172442C9176BC0022EB63 /* RegisterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterProtocol.swift; sourceTree = "<group>"; };
+		4A7172462C9176CB0022EB63 /* RegisterRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRouter.swift; sourceTree = "<group>"; };
+		4A7172492C91EC4F0022EB63 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		4A71724B2C91EC600022EB63 /* ExtString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtString.swift; sourceTree = "<group>"; };
+		4A71724F2C91FAD90022EB63 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4A7172512C9205DF0022EB63 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
+		4A7172532C9205F20022EB63 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		6DD3AB84D534C042E623E227 /* Pods_Kasir.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kasir.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E060590E504519918EE2885 /* Pods-KasirTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KasirTests.release.xcconfig"; path = "Target Support Files/Pods-KasirTests/Pods-KasirTests.release.xcconfig"; sourceTree = "<group>"; };
+		90CA1A2AB478ACC7721D11C5 /* Pods-Kasir.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kasir.debug.xcconfig"; path = "Target Support Files/Pods-Kasir/Pods-Kasir.debug.xcconfig"; sourceTree = "<group>"; };
+		930FD4B62D0A0E5988FFF01C /* Pods-Kasir-KasirUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kasir-KasirUITests.release.xcconfig"; path = "Target Support Files/Pods-Kasir-KasirUITests/Pods-Kasir-KasirUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A762E29FBBE985C41883A6DB /* Pods-Kasir.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kasir.release.xcconfig"; path = "Target Support Files/Pods-Kasir/Pods-Kasir.release.xcconfig"; sourceTree = "<group>"; };
+		C95A5BFDEEE10C7540924FBF /* Pods-KasirTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KasirTests.debug.xcconfig"; path = "Target Support Files/Pods-KasirTests/Pods-KasirTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E0660FE7CF4093234FE7FF9B /* Pods_KasirTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KasirTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4A7171E02C9174E10022EB63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8806EACD9D591A07329A4D99 /* Pods_Kasir.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A7171F92C9174E40022EB63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFE14D095A30DB74C20512D2 /* Pods_KasirTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A7172032C9174E40022EB63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C359E0DF211C755D6E3D349 /* Pods_Kasir_KasirUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4A7171DA2C9174E10022EB63 = {
+			isa = PBXGroup;
+			children = (
+				4A7171E52C9174E10022EB63 /* Kasir */,
+				4A7171FF2C9174E40022EB63 /* KasirTests */,
+				4A7172092C9174E40022EB63 /* KasirUITests */,
+				4A7171E42C9174E10022EB63 /* Products */,
+				E21D7B260F72F3E12067A543 /* Pods */,
+				5851390C92B65D039A5066E7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4A7171E42C9174E10022EB63 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4A7171E32C9174E10022EB63 /* Kasir.app */,
+				4A7171FC2C9174E40022EB63 /* KasirTests.xctest */,
+				4A7172062C9174E40022EB63 /* KasirUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4A7171E52C9174E10022EB63 /* Kasir */ = {
+			isa = PBXGroup;
+			children = (
+				4A7171E62C9174E10022EB63 /* AppDelegate.swift */,
+				4A7171E82C9174E10022EB63 /* SceneDelegate.swift */,
+				4A7171EA2C9174E10022EB63 /* ViewController.swift */,
+				4A7171EC2C9174E10022EB63 /* Main.storyboard */,
+				4A7171F22C9174E30022EB63 /* Assets.xcassets */,
+				4A7171F42C9174E30022EB63 /* LaunchScreen.storyboard */,
+				4A71724F2C91FAD90022EB63 /* GoogleService-Info.plist */,
+				4A7171F72C9174E30022EB63 /* Info.plist */,
+				4A7171EF2C9174E10022EB63 /* Kasir.xcdatamodeld */,
+				4A71722C2C9175B10022EB63 /* Login */,
+				4A71723B2C9176340022EB63 /* Home */,
+				4A7172482C9176D60022EB63 /* Register */,
+				4A7172492C91EC4F0022EB63 /* Alert.swift */,
+				4A71724B2C91EC600022EB63 /* ExtString.swift */,
+			);
+			path = Kasir;
+			sourceTree = "<group>";
+		};
+		4A7171FF2C9174E40022EB63 /* KasirTests */ = {
+			isa = PBXGroup;
+			children = (
+				4A7172002C9174E40022EB63 /* KasirTests.swift */,
+			);
+			path = KasirTests;
+			sourceTree = "<group>";
+		};
+		4A7172092C9174E40022EB63 /* KasirUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4A71720A2C9174E40022EB63 /* KasirUITests.swift */,
+				4A71720C2C9174E40022EB63 /* KasirUITestsLaunchTests.swift */,
+			);
+			path = KasirUITests;
+			sourceTree = "<group>";
+		};
+		4A71722C2C9175B10022EB63 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				4A71721E2C9175490022EB63 /* LoginVC.swift */,
+				4A71721F2C9175490022EB63 /* LoginVC.xib */,
+				4A7172222C91755D0022EB63 /* LoginInteractor.swift */,
+				4A7172242C91756B0022EB63 /* LoginPresenter.swift */,
+				4A7172262C91757B0022EB63 /* LoginEntity.swift */,
+				4A7172282C9175890022EB63 /* LoginRouter.swift */,
+				4A71722A2C9175A70022EB63 /* LoginProtocol.swift */,
+				4A7172512C9205DF0022EB63 /* User+CoreDataClass.swift */,
+				4A7172532C9205F20022EB63 /* User+CoreDataProperties.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		4A71723B2C9176340022EB63 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				4A71722D2C9175D40022EB63 /* HomeVC.swift */,
+				4A71722E2C9175D40022EB63 /* HomeVC.xib */,
+				4A7172312C9175EF0022EB63 /* HomeInteractor.swift */,
+				4A7172332C9175FE0022EB63 /* HomePresenter.swift */,
+				4A7172352C91760B0022EB63 /* HomeProtocol.swift */,
+				4A7172372C91761B0022EB63 /* HomeRouter.swift */,
+				4A7172392C91762C0022EB63 /* HomeEntity.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		4A7172482C9176D60022EB63 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				4A71723C2C91768B0022EB63 /* RegisterVC.swift */,
+				4A71723D2C91768B0022EB63 /* RegisterVC.xib */,
+				4A7172402C91769E0022EB63 /* RegisterInteractor.swift */,
+				4A7172422C9176AC0022EB63 /* RegisterPresenter.swift */,
+				4A7172442C9176BC0022EB63 /* RegisterProtocol.swift */,
+				4A7172462C9176CB0022EB63 /* RegisterRouter.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		5851390C92B65D039A5066E7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6DD3AB84D534C042E623E227 /* Pods_Kasir.framework */,
+				2BC8F4EF71D23B4294EE3688 /* Pods_Kasir_KasirUITests.framework */,
+				E0660FE7CF4093234FE7FF9B /* Pods_KasirTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E21D7B260F72F3E12067A543 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				90CA1A2AB478ACC7721D11C5 /* Pods-Kasir.debug.xcconfig */,
+				A762E29FBBE985C41883A6DB /* Pods-Kasir.release.xcconfig */,
+				495083952CBAEFDE55E698C4 /* Pods-Kasir-KasirUITests.debug.xcconfig */,
+				930FD4B62D0A0E5988FFF01C /* Pods-Kasir-KasirUITests.release.xcconfig */,
+				C95A5BFDEEE10C7540924FBF /* Pods-KasirTests.debug.xcconfig */,
+				8E060590E504519918EE2885 /* Pods-KasirTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4A7171E22C9174E10022EB63 /* Kasir */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A7172102C9174E40022EB63 /* Build configuration list for PBXNativeTarget "Kasir" */;
+			buildPhases = (
+				A8EFEE554DF199A8C64FB1A5 /* [CP] Check Pods Manifest.lock */,
+				4A7171DF2C9174E10022EB63 /* Sources */,
+				4A7171E02C9174E10022EB63 /* Frameworks */,
+				4A7171E12C9174E10022EB63 /* Resources */,
+				283B7669B0718791BAB82B26 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Kasir;
+			productName = Kasir;
+			productReference = 4A7171E32C9174E10022EB63 /* Kasir.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4A7171FB2C9174E40022EB63 /* KasirTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A7172132C9174E40022EB63 /* Build configuration list for PBXNativeTarget "KasirTests" */;
+			buildPhases = (
+				BE9A1DF5C233784E0A6BC251 /* [CP] Check Pods Manifest.lock */,
+				4A7171F82C9174E40022EB63 /* Sources */,
+				4A7171F92C9174E40022EB63 /* Frameworks */,
+				4A7171FA2C9174E40022EB63 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4A7171FE2C9174E40022EB63 /* PBXTargetDependency */,
+			);
+			name = KasirTests;
+			productName = KasirTests;
+			productReference = 4A7171FC2C9174E40022EB63 /* KasirTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4A7172052C9174E40022EB63 /* KasirUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A7172162C9174E40022EB63 /* Build configuration list for PBXNativeTarget "KasirUITests" */;
+			buildPhases = (
+				DFF11D1FDAECF7927B52B877 /* [CP] Check Pods Manifest.lock */,
+				4A7172022C9174E40022EB63 /* Sources */,
+				4A7172032C9174E40022EB63 /* Frameworks */,
+				4A7172042C9174E40022EB63 /* Resources */,
+				50E0A4E2804298C3CB74DD0B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4A7172082C9174E40022EB63 /* PBXTargetDependency */,
+			);
+			name = KasirUITests;
+			productName = KasirUITests;
+			productReference = 4A7172062C9174E40022EB63 /* KasirUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4A7171DB2C9174E10022EB63 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					4A7171E22C9174E10022EB63 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					4A7171FB2C9174E40022EB63 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 4A7171E22C9174E10022EB63;
+					};
+					4A7172052C9174E40022EB63 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 4A7171E22C9174E10022EB63;
+					};
+				};
+			};
+			buildConfigurationList = 4A7171DE2C9174E10022EB63 /* Build configuration list for PBXProject "Kasir" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4A7171DA2C9174E10022EB63;
+			productRefGroup = 4A7171E42C9174E10022EB63 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4A7171E22C9174E10022EB63 /* Kasir */,
+				4A7171FB2C9174E40022EB63 /* KasirTests */,
+				4A7172052C9174E40022EB63 /* KasirUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4A7171E12C9174E10022EB63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A7171F32C9174E30022EB63 /* Assets.xcassets in Resources */,
+				4A7171F62C9174E30022EB63 /* Base in Resources */,
+				4A71722F2C9175D40022EB63 /* HomeVC.xib in Resources */,
+				4A71723E2C91768B0022EB63 /* RegisterVC.xib in Resources */,
+				4A7172202C9175490022EB63 /* LoginVC.xib in Resources */,
+				4A7171EE2C9174E10022EB63 /* Base in Resources */,
+				4A7172502C91FAD90022EB63 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A7171FA2C9174E40022EB63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A7172042C9174E40022EB63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		283B7669B0718791BAB82B26 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kasir/Pods-Kasir-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kasir/Pods-Kasir-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Kasir/Pods-Kasir-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		50E0A4E2804298C3CB74DD0B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kasir-KasirUITests/Pods-Kasir-KasirUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kasir-KasirUITests/Pods-Kasir-KasirUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Kasir-KasirUITests/Pods-Kasir-KasirUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8EFEE554DF199A8C64FB1A5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Kasir-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE9A1DF5C233784E0A6BC251 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KasirTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DFF11D1FDAECF7927B52B877 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Kasir-KasirUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4A7171DF2C9174E10022EB63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A7172362C91760B0022EB63 /* HomeProtocol.swift in Sources */,
+				4A71723A2C91762C0022EB63 /* HomeEntity.swift in Sources */,
+				4A7171F12C9174E10022EB63 /* Kasir.xcdatamodeld in Sources */,
+				4A7171EB2C9174E10022EB63 /* ViewController.swift in Sources */,
+				4A71723F2C91768B0022EB63 /* RegisterVC.swift in Sources */,
+				4A7172472C9176CB0022EB63 /* RegisterRouter.swift in Sources */,
+				4A7172272C91757B0022EB63 /* LoginEntity.swift in Sources */,
+				4A7172382C91761B0022EB63 /* HomeRouter.swift in Sources */,
+				4A7172542C9205F20022EB63 /* User+CoreDataProperties.swift in Sources */,
+				4A71724A2C91EC4F0022EB63 /* Alert.swift in Sources */,
+				4A7172322C9175EF0022EB63 /* HomeInteractor.swift in Sources */,
+				4A7172252C91756B0022EB63 /* LoginPresenter.swift in Sources */,
+				4A7172412C91769E0022EB63 /* RegisterInteractor.swift in Sources */,
+				4A7172232C91755D0022EB63 /* LoginInteractor.swift in Sources */,
+				4A7172432C9176AC0022EB63 /* RegisterPresenter.swift in Sources */,
+				4A7172522C9205DF0022EB63 /* User+CoreDataClass.swift in Sources */,
+				4A7172452C9176BC0022EB63 /* RegisterProtocol.swift in Sources */,
+				4A7172292C9175890022EB63 /* LoginRouter.swift in Sources */,
+				4A7171E72C9174E10022EB63 /* AppDelegate.swift in Sources */,
+				4A71724C2C91EC600022EB63 /* ExtString.swift in Sources */,
+				4A71722B2C9175A70022EB63 /* LoginProtocol.swift in Sources */,
+				4A7172342C9175FE0022EB63 /* HomePresenter.swift in Sources */,
+				4A7171E92C9174E10022EB63 /* SceneDelegate.swift in Sources */,
+				4A7172302C9175D40022EB63 /* HomeVC.swift in Sources */,
+				4A7172212C9175490022EB63 /* LoginVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A7171F82C9174E40022EB63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A7172012C9174E40022EB63 /* KasirTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A7172022C9174E40022EB63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A71720B2C9174E40022EB63 /* KasirUITests.swift in Sources */,
+				4A71720D2C9174E40022EB63 /* KasirUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4A7171FE2C9174E40022EB63 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4A7171E22C9174E10022EB63 /* Kasir */;
+			targetProxy = 4A7171FD2C9174E40022EB63 /* PBXContainerItemProxy */;
+		};
+		4A7172082C9174E40022EB63 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4A7171E22C9174E10022EB63 /* Kasir */;
+			targetProxy = 4A7172072C9174E40022EB63 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4A7171EC2C9174E10022EB63 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4A7171ED2C9174E10022EB63 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4A7171F42C9174E30022EB63 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4A7171F52C9174E30022EB63 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4A71720E2C9174E40022EB63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4A71720F2C9174E40022EB63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4A7172112C9174E40022EB63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90CA1A2AB478ACC7721D11C5 /* Pods-Kasir.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TG5V34PW77;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Kasir/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ferry.Kasir;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4A7172122C9174E40022EB63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A762E29FBBE985C41883A6DB /* Pods-Kasir.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TG5V34PW77;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Kasir/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ferry.Kasir;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4A7172142C9174E40022EB63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C95A5BFDEEE10C7540924FBF /* Pods-KasirTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TG5V34PW77;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ferry.KasirTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kasir.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Kasir";
+			};
+			name = Debug;
+		};
+		4A7172152C9174E40022EB63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E060590E504519918EE2885 /* Pods-KasirTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TG5V34PW77;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ferry.KasirTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kasir.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Kasir";
+			};
+			name = Release;
+		};
+		4A7172172C9174E40022EB63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 495083952CBAEFDE55E698C4 /* Pods-Kasir-KasirUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TG5V34PW77;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ferry.KasirUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Kasir;
+			};
+			name = Debug;
+		};
+		4A7172182C9174E40022EB63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 930FD4B62D0A0E5988FFF01C /* Pods-Kasir-KasirUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TG5V34PW77;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ferry.KasirUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Kasir;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4A7171DE2C9174E10022EB63 /* Build configuration list for PBXProject "Kasir" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A71720E2C9174E40022EB63 /* Debug */,
+				4A71720F2C9174E40022EB63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A7172102C9174E40022EB63 /* Build configuration list for PBXNativeTarget "Kasir" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A7172112C9174E40022EB63 /* Debug */,
+				4A7172122C9174E40022EB63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A7172132C9174E40022EB63 /* Build configuration list for PBXNativeTarget "KasirTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A7172142C9174E40022EB63 /* Debug */,
+				4A7172152C9174E40022EB63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A7172162C9174E40022EB63 /* Build configuration list for PBXNativeTarget "KasirUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A7172172C9174E40022EB63 /* Debug */,
+				4A7172182C9174E40022EB63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4A7171EF2C9174E10022EB63 /* Kasir.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4A7171F02C9174E10022EB63 /* Kasir.xcdatamodel */,
+			);
+			currentVersion = 4A7171F02C9174E10022EB63 /* Kasir.xcdatamodel */;
+			path = Kasir.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 4A7171DB2C9174E10022EB63 /* Project object */;
+}
